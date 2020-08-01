@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hello-spring-boot-parent</artifactId>
+        <groupId>com.lihongkun.labs.spring.boot</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hello-spring-boot-starter</artifactId>
+
+    <dependencies>
+        <dependency>
+            <artifactId>hello-spring-boot-autoconfigure</artifactId>
+            <groupId>com.lihongkun.labs.spring.boot</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--
+            本Starter依赖的包，在 autoconfigure 中 引入方式 optional，故此处需要再引入
+            <dependency>
+                <groupId>x.y.z</groupId>
+                <artifactId>hello</artifactId>
+            </dependency>
+        -->
+    </dependencies>
+
+</project>

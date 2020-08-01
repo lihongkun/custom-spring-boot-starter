@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hello-spring-boot-parent</artifactId>
+        <groupId>com.lihongkun.labs.spring.boot</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>hello-spring-boot-autoconfigure</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <!--
+            如果是实现 autoconfiguration 功能的依赖包一定要使用<optional>true</optional>
+            因为你会在本工程里面定义多个不同功能的 autoconfiguration，引入方可能只使用了一个。
+            如
+            <dependency>
+                <groupId>x.y.z</groupId>
+                <artifactId>hey</artifactId>
+                <version>0.0.1-SNAPSHOT<version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>x.y.z</groupId>
+                <artifactId>hello</artifactId>
+                <version>0.0.1-SNAPSHOT<version>
+                <optional>true</optional>
+            </dependency>
+         -->
+    </dependencies>
+
+</project>
